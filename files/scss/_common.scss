@@ -1,0 +1,34 @@
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin min-mixin($arg) {
+    @media screen and (min-width: $arg ) {
+        @content;
+    }
+}
+
+@mixin min-max-mixin($arg1, $arg2) {
+    @media screen and (min-width: $arg1 ) and (max-width: $arg2) {
+        @content;
+    }
+}
+
+@mixin max-mixin($arg) {
+    @media screen and (max-width: $arg ) {
+        @content;
+    }
+}
+
+@mixin max-height-mixin($arg) {
+    @media screen and (max-width: $arg ) {
+        @content;
+    }
+}
+@font-face {
+    font-family: Zapfino;
+    src: url("../fonts/Zapfino Zip/Unziped/ZapfinoExtraLT-One.otf");
+}
