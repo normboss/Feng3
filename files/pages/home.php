@@ -18,6 +18,9 @@
 <body>
 
     <div class="container">
+        <img class="image-1" src="../img/hero1200.png">
+        <img class="image-2" src="../img/hero768.png">
+        <img class="image-3" src="../img/hero320.png">
 
         <div class="menu">
             <ul>
@@ -28,32 +31,41 @@
             </ul>
 
         </div>
-        <div class="menu-btn">
+        <div class="menu-mobile">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+        <!-- <div class="menu-btn">
             <i class="fas fa-bars fa-2x"></i>
-        </div>
+        </div> -->
 
-
-        <div class="feng-box">
-            <div class="feng-box__upper">
-                Essential
-            </div>
-            <div class="feng-box__lower">
-                <div class="text-upper">
-                    FENG
+        <div class="content">
+            <div class="feng-box">
+                <div class="feng-box__upper">
+                    Essential
                 </div>
-                <div class="text-lower">
-                    SHUI
+                <div class="feng-box__lower">
+                    <div class="text-upper">
+                        FENG
+                    </div>
+                    <div class="text-lower">
+                        SHUI
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="balance">
-            <p>Learn how to live in balance with your universe.
-                By following a path to an uncluttered lifestyle
-                we can change your life to one of peaceful
-                coexistence at home and at work.</p>
+            <div class="balance">
+                <p class="p1">
+                    Learn how to live in balance with your universe.
+                    By following a path to an uncluttered lifestyle
+                    we can change your life to one of peaceful
+                    coexistence at home and at work.</p>
+                <p class="p2">
+                    Learn how to live in balance with your universe by following a path to peaceful coexistence.
+                </p>
+            </div>
         </div>
-
         <div class="circle">
             <div class="circle-top">
                 CHANGE
@@ -70,11 +82,13 @@
 
     </div>
 
-    <script>
+
+
+    <!-- <script>
         document.querySelector('.menu-btn').addEventListener('click', () =>
             document.querySelector('.main-menu').classList.toggle('show')
         );
-    </script>
+    </script> -->
 
 </body>
 
