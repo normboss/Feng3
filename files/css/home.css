@@ -12,12 +12,12 @@ body * {
 }
 
 body {
-  overflow: hidden;
   margin: 0 auto;
 }
 
 .container {
-  width: 1381px;
+  max-width: 1381px;
+  width: 100%;
   position: absolute;
 }
 
@@ -422,7 +422,6 @@ body {
   top: 70%;
   border: 6px solid #fcf7f7;
   background-color: rgba(0, 255, 0, 0.2);
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
