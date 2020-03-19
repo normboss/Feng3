@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Feng3</title>
+    <title>Feng3-2</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/home.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/home2.css" media="screen" rel="stylesheet" type="text/css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://kit.fontawesome.com/4503cd8997.js" crossorigin="anonymous"></script>
 

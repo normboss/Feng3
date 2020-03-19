@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,400|Roboto+Condensed:300i,400|Roboto:300i,400i&display=swap');@import "common";
 
-
 .container {
     width: 1600px;
     height: 789px;
@@ -23,12 +22,8 @@
         background-position-x: right;
         // height: auto;
     }
-    @include max-mixin(320px) {
-        width: 320px;
-        background: url("../img/hero_mobile1.png") no-repeat center center/cover;
-        background-attachment: fixed;
-        // background-position-x: right;
-        // height: auto;
+    @include max-mixin(500px) {
+        height: auto;
     }
     position: absolute;
 
@@ -37,14 +32,29 @@
         @include max-mixin(650px) {
             display: block;
             position: relative;
-            top: 1%;
-            left: 2%;
+            top: 2%;
+            left: 7%;
             cursor: pointer;
+        }
+        // @include max-mixin(650px) {
+        //     top: 3%;
+        // }
+        @include max-mixin(500px) {
+            display: block;
+            position: relative;
+            top: 20px;
+            left: 25px;
+        }
+        @include max-mixin(400px) {
+            display: block;
+            position: relative;
+            top: 20px;
+            left: 8px;
         }
     }
 
     .menu {
-        border: 3px solid blue;
+        // border: 3px solid blue;
         margin-top: 20px;
         width: 400px;
         // padding-right: 150px;
@@ -84,6 +94,7 @@
                 padding: 20px 10px 10px;
             }
         }
+        // display: none;
     }
 
     .feng-box {
@@ -99,15 +110,12 @@
         }
         @include max-mixin(500px) {
             left: 3%;
-            top: -1%;
+            top: 0%;
         }
         @include max-mixin(400px) {
             left: 1%;
             width: 125px;
             // padding-left: 5px;
-        }
-        @include max-mixin(350px) {
-
         }
         text-align: center;
 
@@ -161,10 +169,10 @@
     }
 
     .balance {
-        border: 3px solid red;
+        // border: 3px solid red;
         width: 465px;
         height: 200px;
-        position: absolute;
+        position: relative;
         top: -30%;
         left: 20.5%;
         font-family: 'Roboto Condensed', sans-serif;
@@ -195,30 +203,62 @@
             width: 250px;
             font-size: 22px;
         }
+        // @include max-mixin(500px) {
+        //     left: 23%;
+        //     top: -15%;
+        //     width: 250px;
+        //     font-size: 20px;
+        // }
+        // @include max-mixin(450px) {
+        //     left: 23%;
+        //     width: 200px;
+        //     font-size: 18px;
+        // }
+        // @include max-mixin(400px) {
+        //     left: 19%;
+        //     // top: -18%;
+        //     // width: 0px;
+        //     // font-size: 1px;
+        // }
+        // @include max-mixin(350px) {
+        //     left: 18%;
+        //     width: 160px;
+        //     font-size: 16px;
+        // }
+
         @include max-mixin(500px) {
             left: 23%;
+            top: -180px;
             width: 250px;
-            font-size: 20px;
+            font-size: 22px;
         }
         @include max-mixin(450px) {
-            left: 23%;
-            width: 200px;
-            font-size: 18px;
+            left: 22%;
+            top: -180px;
+            width: 220px;
+            font-size: 20px;
         }
         @include max-mixin(400px) {
             left: 19%;
-            top: -18%;
-            // width: 0px;
-            // font-size: 1px;
+            top: -165px;
+            width: 200px;
+            font-size: 20px;
         }
-        @include max-mixin(350px) {
-            left: 18%;
-            top: 0%;
+        @include max-mixin(365px) {
+            left: 19%;
+            top: -160px;
+            width: 180px;
+            font-size: 18px;
+        }
+        @include max-mixin(330px) {
+            left: 19%;
+            top: -170px;
             width: 160px;
             font-size: 16px;
         }
+
     }
-    
+
     .circle {
         width: 180px;
         height: 180px;
@@ -239,6 +279,22 @@
         @include max-mixin(750px) {
             left: 58%;
         }
+        @include max-mixin(650px) {
+            left: 45%;
+            top: 20%;
+        }
+        @include max-mixin(550px) {
+            left: 32%;
+            top: 20%;
+        }
+        @include max-mixin(400px) {
+            left: 26%;
+            top: 20%;
+        }
+        @include max-mixin(350px) {
+            left: 22%;
+            top: 20%;
+        }
         border-radius: 90px;
         border: 6px solid #FCF7F7;
         background-color: rgba(0, 255, 0, 0.2);
@@ -253,6 +309,11 @@
         text-shadow: 2px 2px 4px rgba(136, 136, 136, 1);
         padding-top: 25px;
         padding-bottom: 25px;
+        @include max-mixin(500px) {
+            border-radius: 75px;
+            width: 150px;
+            height: 150px;
+            }
 
         &-top {
             align-self: center;
@@ -260,6 +321,9 @@
             font-size: 22px;
             text-align: center;
             // line-height: 1.5;
+            @include max-mixin(500px) {
+                font-size: 18px;
+            }
         }
         &-bottom {
             // border: 3px solid red;
@@ -269,6 +333,10 @@
             font-weight: bold;
             @include max-mixin(1150px) {
                 padding-left: 25px;
+            }
+            @include max-mixin(500px) {
+                font-size: 40px;
+                padding-left: 35px;
             }
         }
     }

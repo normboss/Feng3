@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Feng3</title>
+    <title>Feng3-1</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/home.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../css/home1.css" media="screen" rel="stylesheet" type="text/css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://kit.fontawesome.com/4503cd8997.js" crossorigin="anonymous"></script>
 
@@ -19,18 +18,39 @@
 
     <div class="container">
 
-        <div class="menu">
+        <!-- <div class="menu">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">FENG SHUI</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">CONTACT US</a></li>
+
+                <div class="mobile-only show">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FENG SHUI</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </div>
+
             </ul>
 
         </div>
         <div class="menu-btn">
             <i class="fas fa-bars fa-2x"></i>
+        </div> -->
+
+        <div class="menu-btn">
+            <i class="fas fa-bars fa-2x"></i>
         </div>
+
+        <nav class="main-nav">
+            <ul class="main-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FENG SHUI</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
 
 
         <div class="feng-box">

@@ -40,11 +40,9 @@ body * {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 500px) {
   .container {
-    width: 320px;
-    background: url("../img/hero_mobile1.png") no-repeat center center/cover;
-    background-attachment: fixed;
+    height: auto;
   }
 }
 
@@ -56,14 +54,31 @@ body * {
   .container .menu-btn {
     display: block;
     position: relative;
-    top: 1%;
-    left: 2%;
+    top: 2%;
+    left: 7%;
     cursor: pointer;
   }
 }
 
+@media screen and (max-width: 500px) {
+  .container .menu-btn {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .menu-btn {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 8px;
+  }
+}
+
 .container .menu {
-  border: 3px solid blue;
   margin-top: 20px;
   width: 400px;
   -webkit-box-pack: end;
@@ -133,7 +148,7 @@ body * {
 @media screen and (max-width: 500px) {
   .container .feng-box {
     left: 3%;
-    top: -1%;
+    top: 0%;
   }
 }
 
@@ -203,10 +218,9 @@ body * {
 }
 
 .container .balance {
-  border: 3px solid red;
   width: 465px;
   height: 200px;
-  position: absolute;
+  position: relative;
   top: -30%;
   left: 20.5%;
   font-family: 'Roboto Condensed', sans-serif;
@@ -246,30 +260,43 @@ body * {
 @media screen and (max-width: 500px) {
   .container .balance {
     left: 23%;
+    top: -180px;
     width: 250px;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .container .balance {
-    left: 23%;
-    width: 200px;
-    font-size: 18px;
+    left: 22%;
+    top: -180px;
+    width: 220px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .container .balance {
     left: 19%;
-    top: -18%;
+    top: -165px;
+    width: 200px;
+    font-size: 20px;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 365px) {
   .container .balance {
-    left: 18%;
-    top: 0%;
+    left: 19%;
+    top: -160px;
+    width: 180px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .container .balance {
+    left: 19%;
+    top: -170px;
     width: 160px;
     font-size: 16px;
   }
@@ -328,6 +355,42 @@ body * {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .container .circle {
+    left: 45%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container .circle {
+    left: 32%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .circle {
+    left: 26%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container .circle {
+    left: 22%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container .circle {
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .container .circle-top {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -335,6 +398,12 @@ body * {
   font-weight: bold;
   font-size: 22px;
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .container .circle-top {
+    font-size: 18px;
+  }
 }
 
 .container .circle-bottom {
@@ -351,4 +420,11 @@ body * {
     padding-left: 25px;
   }
 }
-/*# sourceMappingURL=home.css.map */
+
+@media screen and (max-width: 500px) {
+  .container .circle-bottom {
+    font-size: 40px;
+    padding-left: 35px;
+  }
+}
+/*# sourceMappingURL=home2.css.map */
